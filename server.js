@@ -14,7 +14,6 @@ var actividad_herramientas = require("./routes/actividad_herramientas")
 var cors = require("cors")
 var app = express()
 var router = require('./routes/routesLogin')
-process.env.host = 'https://ctmbackendprod.herokuapp.com/';
 var port = process.env.port || 3000;
 
 app.use(passport.initialize());
