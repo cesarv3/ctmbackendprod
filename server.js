@@ -14,7 +14,7 @@ var actividad_herramientas = require("./routes/actividad_herramientas")
 var cors = require("cors")
 var app = express()
 var router = require('./routes/routesLogin')
-var port = process.env.port || 3000;
+var port = 3000 || process.env.port;
 
 app.use(passport.initialize());
 app.use(cors())
